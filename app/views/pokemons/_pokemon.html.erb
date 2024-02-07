@@ -1,0 +1,26 @@
+<div id="<%= dom_id pokemon %>">
+  <p>
+    <strong>Name:</strong>
+    <%= pokemon.name %>
+  </p>
+
+  <p>
+    <% if pokemon.image_url %>
+      <strong>Image url:</strong>
+      <%= image_tag pokemon.image_url %>
+    <% end %>
+  </p>
+
+  <p>
+    <% if pokemon.shiny_image_url %>
+      <strong>Shiny image url:</strong>
+      <%= image_tag pokemon.shiny_image_url %>
+    <% end %>
+  </p>
+
+  <p>
+    <strong>External id:</strong>
+    <%= pokemon.external_id %>
+  </p>
+
+</div>
